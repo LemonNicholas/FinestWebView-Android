@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="refresh">Segar semula</string>
+    <string name="find">Cari</string>
+    <string name="share_via">Kongsi dengan</string>
+    <string name="copy_link">Salin tautan</string>
+    <string name="open_with">Buka dengan</string>
+    <string name="copied_to_clipboard">Tautan disalin</string>
+</resources>

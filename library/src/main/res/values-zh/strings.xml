@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="refresh">刷新</string>
+    <string name="find">搜索</string>
+    <string name="share_via">分享链接</string>
+    <string name="copy_link">复制链接</string>
+    <string name="open_with">打开链接</string>
+    <string name="copied_to_clipboard">已经复制</string>
+</resources>

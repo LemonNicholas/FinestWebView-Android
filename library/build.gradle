@@ -1,6 +1,4 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.neenbedankt.android-apt'
-apply plugin: 'com.novoda.bintray-release'
 
 android {
   compileSdkVersion rootProject.ext.compileSdkVersion
@@ -22,6 +20,7 @@ android {
   lintOptions {
     abortOnError false
   }
+  buildToolsVersion '26.0.2'
 }
 
 dependencies {
@@ -31,16 +30,16 @@ dependencies {
   compile "com.android.support:design:${rootProject.ext.supportLibVersion}"
   compile 'com.nineoldandroids:library:2.4.0'
   compile 'com.thefinestartist:utils:0.9.0'
-  apt 'com.thefinestartist:compilers:0.9.0'
+  annotationProcessor 'com.thefinestartist:compilers:0.9.0'
 }
 
-publish {
-  userOrg = 'thefinestartist'
-  groupId = 'com.thefinestartist'
-  artifactId = 'finestwebview'
-  publishVersion = rootProject.ext.versionName
-  desc = 'Beautiful and customizable Android Activity that shows web pages within an app.'
-  website = 'https://github.com/TheFinestArtist/FinestWebView-Android'
-}
+//publish {
+//  userOrg = 'thefinestartist'
+//  groupId = 'com.thefinestartist'
+//  artifactId = 'finestwebview'
+//  publishVersion = rootProject.ext.versionName
+//  desc = 'Beautiful and customizable Android Activity that shows web pages within an app.'
+//  website = 'https://github.com/TheFinestArtist/FinestWebView-Android'
+//}
 
 //$ ./gradlew clean build bintrayUpload -PbintrayUser=thefinestartist -PbintrayKey=BINTRAY_KEY -PdryRun=false
