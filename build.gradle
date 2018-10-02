@@ -6,7 +6,7 @@ buildscript {
     google()
   }
   dependencies {
-    classpath 'com.android.tools.build:gradle:3.0.1'
+    classpath 'com.android.tools.build:gradle:3.1.4'
     classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
   }
 }
@@ -32,7 +32,7 @@ ext {
   targetCompatibility = JavaVersion.VERSION_1_7
 
   versionCode = 10
-  versionName = '1.2.8'
+  versionName = '1.2.9'
 
   supportLibVersion = '24.1.1'
   playLibVersion = '8.4.0'
